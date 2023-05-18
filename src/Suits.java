@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public class Suits {
+
+public enum Suits {
+    DIAMOND, HEART, SPADE, CLUB
 }
