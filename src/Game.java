@@ -1,8 +1,6 @@
-
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
-public class Blackjack {
+public class Game {
 
     public static void main(String[] args) {
         // Welcome Message
@@ -29,7 +27,7 @@ public class Blackjack {
         while(playerMoney > 0) {
             // Continue Betting
             // Take in Players bet
-            System.out.println("You have $" + playerMoney + "how much would you like to bet?");
+            System.out.println("You have $" + playerMoney + " how much would you like to bet?");
             double playerBet = userInput.nextDouble();
             if(playerBet > playerMoney) {
                 System.out.println("The amount you're betting is more than what you currently have!");
