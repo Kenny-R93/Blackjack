@@ -70,7 +70,7 @@ public class Game {
                         System.out.println("Bust! Currently valued at: " + playerHand.cardsValue());
 
                         // Amount of money they lose
-                        playerMoney -= playerBet;
+                        playerMoney = playerMoney - playerBet;
 
                         // Boolean to know when round is ended and goes to next round
                         endRound = true;
@@ -92,7 +92,7 @@ public class Game {
             // Check to see if dealer's hand has more points than the player's hand && end round
             if((dealerHand.cardsValue() > playerHand.cardsValue()) && endRound == false) {
                 System.out.println("Dealer Wins!");
-                playerMoney -= playerBet;
+                playerMoney = playerMoney - playerBet;
                 endRound = true;
 
             }
@@ -115,6 +115,7 @@ public class Game {
 
             if ((playerHand.cardsValue() > dealerHand.cardsValue()) && endRound == false) {
                 System.out.println("The Player Wins the hand!");
+                playerMoney += playerBet;
                 endRound = true;
             }
 
